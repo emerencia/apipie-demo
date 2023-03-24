@@ -1,0 +1,466 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Demo (params in:formData)",
+    "description": "\n<p>Another API description</p>\n",
+    "version": "1",
+    "x-copyright": null
+  },
+  "basePath": "/api",
+  "consumes": [
+    "application/x-www-form-urlencoded",
+    "multipart/form-data"
+  ],
+  "paths": {
+    "/api/v1/users/{user_id}/tweets": {
+      "get": {
+        "tags": [
+          "tweets"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "get_api_v1_users_user_id_tweets",
+        "parameters": [
+          {
+            "name": "user_id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      },
+      "post": {
+        "tags": [
+          "tweets"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "post_api_v1_users_user_id_tweets",
+        "parameters": [
+          {
+            "name": "user_id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "tweet[scheduled_at]",
+            "type": "string",
+            "in": "formData"
+          },
+          {
+            "name": "tweet[sent]",
+            "type": "boolean",
+            "in": "formData"
+          },
+          {
+            "name": "tweet[text]",
+            "type": "string",
+            "in": "formData"
+          },
+          {
+            "name": "tweet[user_id]",
+            "type": "number",
+            "in": "formData"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      }
+    },
+    "/api/v1/users/{user_id}/tweets/{id}": {
+      "get": {
+        "tags": [
+          "tweets"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "get_api_v1_users_user_id_tweets_id",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "user_id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      },
+      "patch": {
+        "tags": [
+          "tweets"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "patch_api_v1_users_user_id_tweets_id",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "user_id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "tweet[scheduled_at]",
+            "type": "string",
+            "in": "formData"
+          },
+          {
+            "name": "tweet[sent]",
+            "type": "boolean",
+            "in": "formData"
+          },
+          {
+            "name": "tweet[text]",
+            "type": "string",
+            "in": "formData"
+          },
+          {
+            "name": "tweet[user_id]",
+            "type": "number",
+            "in": "formData"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      },
+      "put": {
+        "tags": [
+          "tweets"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "put_api_v1_users_user_id_tweets_id",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "user_id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "tweet[scheduled_at]",
+            "type": "string",
+            "in": "formData"
+          },
+          {
+            "name": "tweet[sent]",
+            "type": "boolean",
+            "in": "formData"
+          },
+          {
+            "name": "tweet[text]",
+            "type": "string",
+            "in": "formData"
+          },
+          {
+            "name": "tweet[user_id]",
+            "type": "number",
+            "in": "formData"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      },
+      "delete": {
+        "tags": [
+          "tweets"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "delete_api_v1_users_user_id_tweets_id",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "user_id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      }
+    },
+    "/api/v1/users": {
+      "get": {
+        "tags": [
+          "users"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "get_api_v1_users",
+        "parameters": [
+
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      },
+      "post": {
+        "tags": [
+          "users"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "post_api_v1_users",
+        "parameters": [
+          {
+            "name": "user[name]",
+            "type": "string",
+            "in": "formData",
+            "required": true,
+            "description": "Name of the user"
+          },
+          {
+            "name": "user[street]",
+            "type": "string",
+            "in": "formData",
+            "description": "Street name"
+          },
+          {
+            "name": "user[number]",
+            "type": "number",
+            "in": "formData"
+          },
+          {
+            "name": "user[zip]",
+            "type": "string",
+            "in": "formData"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      }
+    },
+    "/api/v1/users/{id}": {
+      "get": {
+        "tags": [
+          "users"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "get_api_v1_users_id",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      },
+      "patch": {
+        "tags": [
+          "users"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "patch_api_v1_users_id",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "user[name]",
+            "type": "string",
+            "in": "formData",
+            "description": "Name of the user"
+          },
+          {
+            "name": "user[street]",
+            "type": "string",
+            "in": "formData",
+            "description": "Street name"
+          },
+          {
+            "name": "user[number]",
+            "type": "number",
+            "in": "formData"
+          },
+          {
+            "name": "user[zip]",
+            "type": "string",
+            "in": "formData"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      },
+      "put": {
+        "tags": [
+          "users"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "put_api_v1_users_id",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          },
+          {
+            "name": "user[name]",
+            "type": "string",
+            "in": "formData",
+            "description": "Name of the user"
+          },
+          {
+            "name": "user[street]",
+            "type": "string",
+            "in": "formData",
+            "description": "Street name"
+          },
+          {
+            "name": "user[number]",
+            "type": "number",
+            "in": "formData"
+          },
+          {
+            "name": "user[zip]",
+            "type": "string",
+            "in": "formData"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      },
+      "delete": {
+        "tags": [
+          "users"
+        ],
+        "consumes": [
+          "application/x-www-form-urlencoded",
+          "multipart/form-data"
+        ],
+        "operationId": "delete_api_v1_users_id",
+        "parameters": [
+          {
+            "name": "id",
+            "type": "number",
+            "in": "path",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "ok"
+          }
+        },
+        "description": ""
+      }
+    }
+  },
+  "definitions": {
+  },
+  "schemes": [
+    "https"
+  ],
+  "tags": [
+
+  ],
+  "securityDefinitions": {
+  },
+  "security": [
+
+  ],
+  "host": "localhost:3000"
+}
